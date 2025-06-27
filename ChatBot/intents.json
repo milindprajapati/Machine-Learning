@@ -1,0 +1,161 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Good morning",
+        "Hey"
+      ],
+      "responses": [
+        "Hello there!",
+        "Hi! How can I help you?",
+        "Hey!"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later"
+      ],
+      "responses": [
+        "Goodbye!",
+        "Take care!",
+        "See you soon!"
+      ]
+    },
+    {
+      "tag": "ask_language",
+      "patterns": [
+        "Which languages do you know?",
+        "What languages can you code in?"
+      ],
+      "responses": [
+        "I'm comfortable with Python, Go, Rust, JavaScript, and more."
+      ]
+    },
+    {
+      "tag": "ask_frameworks",
+      "patterns": [
+        "Which frameworks do you use?",
+        "What tech stack do you prefer?"
+      ],
+      "responses": [
+        "I use Django, React, Spring Boot, .NET Core and others."
+      ]
+    },
+    {
+      "tag": "daily_task_ci_cd",
+      "patterns": [
+        "Tell me about CI/CD tasks",
+        "Do you work with pipelines?"
+      ],
+      "responses": [
+        "Yes, I build and maintain CI/CD using GitLab, Jenkins, and Docker."
+      ]
+    },
+    {
+      "tag": "cloud_work",
+      "patterns": [
+        "Do you use AWS?",
+        "Tell me your cloud experience"
+      ],
+      "responses": [
+        "Yes, I use AWS EC2, S3, IAM, and deploy with Terraform."
+      ]
+    },
+    {
+      "tag": "microservices_experience",
+      "patterns": [
+        "Do you build microservices?",
+        "Tell me your microservices experience"
+      ],
+      "responses": [
+        "I migrated monoliths to microservices and built scalable APIs."
+      ]
+    },
+    {
+      "tag": "embedded_systems",
+      "patterns": [
+        "Do you work on embedded devices?",
+        "What's your embedded experience?"
+      ],
+      "responses": [
+        "Yes, I build firmware for STM32, ESP32, and ARM-based systems."
+      ]
+    },
+    {
+      "tag": "devops_tools",
+      "patterns": [
+        "Which DevOps tools do you use?",
+        "What tools are in your DevOps stack?"
+      ],
+      "responses": [
+        "I use Docker, Kubernetes, GitLab CI/CD, Jenkins, and Terraform."
+      ]
+    },
+    {
+      "tag": "testing_tools",
+      "patterns": [
+        "What testing tools do you use?",
+        "Do you use TDD or any frameworks?"
+      ],
+      "responses": [
+        "I use PyTest, Selenium, and follow TDD and Agile principles."
+      ]
+    },
+    {
+      "tag": "data_pipeline",
+      "patterns": [
+        "Do you work with data pipelines?",
+        "How do you handle large-scale data?"
+      ],
+      "responses": [
+        "I build Kafka and Spark pipelines for 50K+ daily events."
+      ]
+    },
+    {
+      "tag": "api_design",
+      "patterns": [
+        "Have you built APIs?",
+        "What kind of APIs do you use?"
+      ],
+      "responses": [
+        "Yes, I design REST and gRPC APIs for internal and external services."
+      ]
+    },
+    {
+      "tag": "team_leading",
+      "patterns": [
+        "Do you manage teams?",
+        "Have you led any projects?"
+      ],
+      "responses": [
+        "I mentor engineers, lead projects, and set onboarding processes."
+      ]
+    },
+    {
+      "tag": "ml_biometric",
+      "patterns": [
+        "Have you worked in ML?",
+        "What ML projects have you done?"
+      ],
+      "responses": [
+        "Yes, I built ML pipelines for biometric authentication using SVM, PCA, LDA."
+      ]
+    },
+    {
+      "tag": "android_development",
+      "patterns": [
+        "Do you develop for Android?",
+        "Any experience with Android apps?"
+      ],
+      "responses": [
+        "Yes, I\u2019ve developed and debugged Android apps for Echo and Fire TV."
+      ]
+    }
+  ]
+}
