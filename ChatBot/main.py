@@ -57,7 +57,7 @@ for (pattern_sentence, tag) in xy:
     X_train.append(bow)
     y_train.append(tags.index(tag))
 
-X_train = torch.tensor(X_train, dtype=torch.float32)
+X_train = torch.tensor(np.array(X_train), dtype=torch.float32)
 y_train = torch.tensor(y_train, dtype=torch.long)
 
 # Define the model
@@ -74,7 +74,7 @@ class ChatNet(nn.Module):
         return self.l3(x)
 
 # Initialize and train model
-model = ChatNet(input_size=len(all_words), hidden_size=8, output_size=len(tags))
+model = ChatNet(input_size=len(all_words), hidden_size=500, output_size=len(tags))
 criterion = nn.CrossEntropyLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=0.001)
 
@@ -87,7 +87,7 @@ for epoch in range(num_epochs):
     loss.backward()
     optimizer.step()
 
-    if (epoch+1) % 100 == 0:
+    if (epoch+1) % 1000 == 0:
         print(f"Epoch {epoch+1}/{num_epochs}, Loss: {loss.item():.4f}")
 
 print("Training complete.")
